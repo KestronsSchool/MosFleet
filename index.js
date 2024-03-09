@@ -2,7 +2,7 @@ const express=require("express");
 const fs=require("fs");
 const site=new express();
 site.listen(3000,()=>{
-    console.log("Propaganda site online");
+    console.log("Site online");
 });
 site.use(express.static("./static"));
 site.use("/favicon.ico",express.static("./static/ferry.png"));
